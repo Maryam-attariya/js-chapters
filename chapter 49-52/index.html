@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 49-52</title>
+</head>
+
+<body>
+    <h2>Sign up Form</h2>
+    <form id="signupForm">
+        <input type="text" id="name" placeholder="Name"><br><br>
+        <input type="email" id="email" placeholder="Email"><br><br>
+        <input type="password" id="password" placeholder="Password"><br><br>
+        <button type="submit">Sign Up</button>
+    </form>
+    <div id="output"></div>
+
+    <p id="text">
+        Javascript is a programming language....
+        <span id="more" style="display: none;"> It is used to make websites interactive. It can handle events, forms,
+            animations and much
+            more.</span>
+    </p>
+    <button onclick="showMore()">Read More</button>
+
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Arisha</td>
+            <td>100</td>
+            <td> <button onclick="deleteItm(this)">Delete</button></td>
+            <td><button onclick="edit(this)">Edit</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Wrisha</td>
+            <td>120</td>
+            <td> <button onclick="deleteItm(this)">Delete</button></td>
+            <td><button onclick="edit(this)">Edit</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Faiza</td>
+            <td>110</td>
+            <td> <button onclick="deleteItm(this)">Delete</button></td>
+            <td><button onclick="edit(this)">Edit</button></td>
+        </tr>
+    </table>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
