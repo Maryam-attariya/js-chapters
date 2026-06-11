@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 43-48</title>
+</head>
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    p {
+        margin-left: 30px;
+    }
+
+    img {
+        border: 1px solid rgb(167, 188, 228);
+        width: 120px;
+        height: 100px;
+    }
+
+    p {
+        font-size: 10px;
+        color: rgb(167, 188, 228);
+    }
+
+    h3 {
+        color: rgb(167, 188, 228);
+        text-align: center;
+    }
+</style>
+
+<body>
+    <!-- problem:1 -->
+    <a href="#" onclick="showAlert()">Click Me</a>
+    <!-- problem:2 -->
+    <h3>Mobile phone Lookup</h3>
+    <div id="container">
+        <div>
+            <img src="./images/img1.jfif" alt="Samsung Galaxy S24" onclick="thanks()">
+            <p>Samsung Galaxy S24</p>
+        </div>
+        <div>
+            <img src="./images/img2.jfif" alt="iPhone 15 Pro" onclick="thanks()">
+            <p>iPhone 15 Pro</p>
+        </div>
+        <div>
+            <img src="./images/img3.jfif" alt="Google Pixel 8" onclick="thanks()">
+            <p>Google Pixel 8</p>
+        </div>
+        <div>
+            <img src="./images/img4.jfif" alt="OnePlus 12" onclick="thanks()">
+            <p>OnePlus 12</p>
+        </div>
+    </div>
+    <!-- problem:3 -->
+    <table>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Jhone</td>
+            <td>10</td>
+            <td><button onclick="remove(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><button onclick="remove(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><button onclick="remove(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><button onclick="remove(this)">Delete</button></td>
+        </tr>
+    </table>
+    <!-- problem:4 -->
+    <img src="./images/img2.jfif" onmouseover="this.src='./images/img3.jfif'"
+        onmouseout="this.src='./images/img2.jfif'">
+    <!-- problem:5 -->
+    <h4 id="count"> Count:0</h4>
+    <button onclick="increase()">Increase</button>
+    <button onclick="decrease()">Decrease</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
